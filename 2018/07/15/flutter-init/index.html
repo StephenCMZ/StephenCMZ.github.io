@@ -108,26 +108,35 @@
 
 
 
-  <meta name="description" content="Android和iOS是当前两大移动端平台。Android得益于其开源及高度的可定制化，在移动平台的世界里风光无限。而iOS却是闭源而且可定制化极低的移动平台，但是它拥有优秀的基因以及苹果对用户体验的极致追求，再加上苹果完善的生态圈，这使得iOS在移动平台的世界里也是佼佼者。 因此对于移动开发者而言，学习这两个平台的原生开发是非常有必要的。 在此就总结一下Android平台开发的知识要点：  首先">
+  <meta name="description" content="Flutter 是 Google 用以帮助开发者在 iOS 和 Android 两个平台开发高质量原生 UI 的移动 SDK。Flutter 兼容现有的代码，免费且开源，在全球开发者中广泛被使用。 这段时间国内的许多开发者已经开始高度关注Flutter，由于它提供了另外一种高效的跨平台解决思路，同时还提供了高质量的UI，这是移动开发者一个极大的便利，也是值得让移动开发者兴奋的事情。 Flutter">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android开发知识要点总结">
-<meta property="og:url" content="https://stephencmz.github.io/2018/07/13/android-line/index.html">
+<meta property="og:title" content="第一个Flutter应用程序">
+<meta property="og:url" content="https://stephencmz.github.io/2018/07/15/flutter-init/index.html">
 <meta property="og:site_name" content="Stephen&#39;s blog">
-<meta property="og:description" content="Android和iOS是当前两大移动端平台。Android得益于其开源及高度的可定制化，在移动平台的世界里风光无限。而iOS却是闭源而且可定制化极低的移动平台，但是它拥有优秀的基因以及苹果对用户体验的极致追求，再加上苹果完善的生态圈，这使得iOS在移动平台的世界里也是佼佼者。 因此对于移动开发者而言，学习这两个平台的原生开发是非常有必要的。 在此就总结一下Android平台开发的知识要点：  首先">
+<meta property="og:description" content="Flutter 是 Google 用以帮助开发者在 iOS 和 Android 两个平台开发高质量原生 UI 的移动 SDK。Flutter 兼容现有的代码，免费且开源，在全球开发者中广泛被使用。 这段时间国内的许多开发者已经开始高度关注Flutter，由于它提供了另外一种高效的跨平台解决思路，同时还提供了高质量的UI，这是移动开发者一个极大的便利，也是值得让移动开发者兴奋的事情。 Flutter">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://stephencmz.github.io/images/android/Android知识.png">
+<meta property="og:image" content="https://stephencmz.github.io/images/flutter/FlutterSDK.PNG">
+<meta property="og:image" content="https://stephencmz.github.io/images/flutter/FlutterHome.PNG">
+<meta property="og:image" content="https://stephencmz.github.io/images/flutter/FlutterPlugin.PNG">
+<meta property="og:image" content="https://stephencmz.github.io/images/flutter/FlutterDoctor.PNG">
+<meta property="og:image" content="https://stephencmz.github.io/images/flutter/FlutterStart.png">
+<meta property="og:image" content="https://stephencmz.github.io/images/flutter/FlutterNext.png">
+<meta property="og:image" content="https://stephencmz.github.io/images/flutter/FlutterCompany.png">
+<meta property="og:image" content="https://stephencmz.github.io/images/flutter/FlutterFolder.png">
+<meta property="og:image" content="https://stephencmz.github.io/images/flutter/FlutterRun.png">
+<meta property="og:image" content="https://stephencmz.github.io/images/flutter/FlutterGroup.jpg">
 <meta property="og:updated_time" content="2018-07-24T07:17:40.322Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android开发知识要点总结">
-<meta name="twitter:description" content="Android和iOS是当前两大移动端平台。Android得益于其开源及高度的可定制化，在移动平台的世界里风光无限。而iOS却是闭源而且可定制化极低的移动平台，但是它拥有优秀的基因以及苹果对用户体验的极致追求，再加上苹果完善的生态圈，这使得iOS在移动平台的世界里也是佼佼者。 因此对于移动开发者而言，学习这两个平台的原生开发是非常有必要的。 在此就总结一下Android平台开发的知识要点：  首先">
-<meta name="twitter:image" content="https://stephencmz.github.io/images/android/Android知识.png">
+<meta name="twitter:title" content="第一个Flutter应用程序">
+<meta name="twitter:description" content="Flutter 是 Google 用以帮助开发者在 iOS 和 Android 两个平台开发高质量原生 UI 的移动 SDK。Flutter 兼容现有的代码，免费且开源，在全球开发者中广泛被使用。 这段时间国内的许多开发者已经开始高度关注Flutter，由于它提供了另外一种高效的跨平台解决思路，同时还提供了高质量的UI，这是移动开发者一个极大的便利，也是值得让移动开发者兴奋的事情。 Flutter">
+<meta name="twitter:image" content="https://stephencmz.github.io/images/flutter/FlutterSDK.PNG">
 
 
 
 
 
 
-  <link rel="canonical" href="https://stephencmz.github.io/2018/07/13/android-line/"/>
+  <link rel="canonical" href="https://stephencmz.github.io/2018/07/15/flutter-init/"/>
 
 
 
@@ -137,7 +146,7 @@
   };
 </script>
 
-  <title>Android开发知识要点总结 | Stephen's blog</title>
+  <title>第一个Flutter应用程序 | Stephen's blog</title>
   
 
 
@@ -308,7 +317,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://stephencmz.github.io/2018/07/13/android-line/">
+    <link itemprop="mainEntityOfPage" href="https://stephencmz.github.io/2018/07/15/flutter-init/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StephenChen">
@@ -325,7 +334,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Android开发知识要点总结
+          <h1 class="post-title" itemprop="name headline">第一个Flutter应用程序
               
             
           </h1>
@@ -350,7 +359,7 @@
                 
               
 
-              <time title="创建时间：2018-07-13 14:36:49" itemprop="dateCreated datePublished" datetime="2018-07-13T14:36:49+08:00">2018-07-13</time>
+              <time title="创建时间：2018-07-15 21:37:14" itemprop="dateCreated datePublished" datetime="2018-07-15T21:37:14+08:00">2018-07-15</time>
             
 
             
@@ -384,7 +393,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Flutter/" itemprop="url" rel="index"><span itemprop="name">Flutter</span></a></span>
 
                 
                 
@@ -398,7 +407,7 @@
 
           
           
-             <span id="/2018/07/13/android-line/" class="leancloud_visitors" data-flag-title="Android开发知识要点总结">
+             <span id="/2018/07/15/flutter-init/" class="leancloud_visitors" data-flag-title="第一个Flutter应用程序">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -429,47 +438,136 @@
       
 
       
-        <p><code>Android</code>和<code>iOS</code>是当前两大移动端平台。Android得益于其开源及高度的可定制化，在移动平台的世界里风光无限。而iOS却是闭源而且可定制化极低的移动平台，但是它拥有优秀的基因以及苹果对用户体验的极致追求，再加上苹果完善的生态圈，这使得iOS在移动平台的世界里也是佼佼者。</p>
-<p>因此对于移动开发者而言，学习这两个平台的原生开发是非常有必要的。</p>
-<h3 id="在此就总结一下Android平台开发的知识要点："><a href="#在此就总结一下Android平台开发的知识要点：" class="headerlink" title="在此就总结一下Android平台开发的知识要点："></a>在此就总结一下Android平台开发的知识要点：</h3><blockquote>
-<ol>
-<li>首先自然是<code>Java</code>语言的基础了，当然也可以学习谷歌新出的语言<code>Kotlin</code>，但还建议从<code>Java</code>开始学习，毕竟<code>Java</code>相对比较成熟。</li>
-<li>不管是学习Android和iOS开发，接下来便是掌握几个核心内容了：<code>UI相关内容</code>、<code>数据存储</code>、<code>网络及通讯</code>、<code>线程相关内容</code></li>
-<li>完成了基础知识的学习，接着便是学习<code>NDK</code>、<code>优化</code>等一些较为零碎的知识了。</li>
+        <p><code>Flutter</code> 是 Google 用以帮助开发者在 iOS 和 Android 两个平台开发高质量原生 UI 的移动 SDK。Flutter 兼容现有的代码，免费且开源，在全球开发者中广泛被使用。</p>
+<p>这段时间国内的许多开发者已经开始高度关注<code>Flutter</code>，由于它提供了另外一种高效的跨平台解决思路，同时还提供了高质量的UI，这是移动开发者一个极大的便利，也是值得让移动开发者兴奋的事情。</p>
+<p><code>Flutter</code>采用的开发语言是<code>Dart</code>,可能很多开发者都不是很了解这个语言，因为在之前我们使用的地方也确实不多。<code>Dart</code>也是Google的产品，有其他面向对象语言基础的开发者基本上是可以无缝使用的，个人觉得使用起来很舒服。</p>
+<p>本文就先从开发环境的搭建开始，一步步创建第一个Flutter应用。</p>
+<h3 id="主要内容如下："><a href="#主要内容如下：" class="headerlink" title="主要内容如下："></a>主要内容如下：</h3><ol>
+<li>Windows下Flutter开发环境的搭建</li>
+<li>创建第一个Flutter应用</li>
+<li>介绍Flutter应用的目录结构</li>
+<li>介绍Flutter应用的代码</li>
 </ol>
+<h3 id="在开始之前，先列举几个不错的Flutter学习站点："><a href="#在开始之前，先列举几个不错的Flutter学习站点：" class="headerlink" title="在开始之前，先列举几个不错的Flutter学习站点："></a>在开始之前，先列举几个不错的Flutter学习站点：</h3><ol>
+<li>Flutter官网  <a href="https://flutter.io/" target="_blank" rel="noopener">https://flutter.io/</a></li>
+<li>Flutter中文官网  <a href="https://flutter-io.cn/" target="_blank" rel="noopener">https://flutter-io.cn/</a></li>
+<li>咸鱼技术 <a href="https://yuque.com/xytech/flutter" target="_blank" rel="noopener">https://yuque.com/xytech/flutter</a></li>
+<li>Dart语言官网 <a href="https://www.dartlang.org/" target="_blank" rel="noopener">https://www.dartlang.org/</a></li>
+</ol>
+<h3 id="Windows下Flutter开发环境的搭建："><a href="#Windows下Flutter开发环境的搭建：" class="headerlink" title="Windows下Flutter开发环境的搭建："></a>Windows下Flutter开发环境的搭建：</h3><p>Flutter的环境搭建比较简单，只需要根据官方的文档一步步进行便可以了，具体如下：</p>
+<ol>
+<li><p>下载<a href="https://storage.googleapis.com/flutter_infra/releases/beta/windows/flutter_windows_v0.5.1-beta.zip" target="_blank" rel="noopener">FlutterSDK</a>，并解压到任意路径下，我们为了使用的方便，同时将FlutterSDK路径添加到Windows的环境变量中：</p>
+<p> <img src="/images/flutter/FlutterSDK.PNG" alt=""></p>
+<blockquote>
+<p>这里解压到<code>D:\ProgramFiles\flutter</code>中，值得注意的是，路径中不能存在空格，当然最好也不要存在中文</p>
 </blockquote>
-<h3 id="下面详细列举一下相关知识点的详细内容："><a href="#下面详细列举一下相关知识点的详细内容：" class="headerlink" title="下面详细列举一下相关知识点的详细内容："></a>下面详细列举一下相关知识点的详细内容：</h3><h4 id="1-基础知识"><a href="#1-基础知识" class="headerlink" title="1. 基础知识"></a>1. 基础知识</h4><pre><code>* java基础
-* 数据结构
-* 面向对象
-* 设计模式
-</code></pre><h4 id="2-四大组件"><a href="#2-四大组件" class="headerlink" title="2. 四大组件"></a>2. 四大组件</h4><pre><code>* Activity
-* Service
-* BroadcastReceiver
-* ContentProvider
-</code></pre><h4 id="3-UI相关"><a href="#3-UI相关" class="headerlink" title="3. UI相关"></a>3. UI相关</h4><pre><code>* 常用布局
-* 常用基础控件
-* 常用高级控件
-* 自定义控件
-* 动画
-</code></pre><h4 id="4-数据存储"><a href="#4-数据存储" class="headerlink" title="4. 数据存储"></a>4. 数据存储</h4><pre><code>* SharedPreference
-* File
-* Sqlite
-</code></pre><h4 id="5-多线程"><a href="#5-多线程" class="headerlink" title="5. 多线程"></a>5. 多线程</h4><pre><code>* Handler+Thread
-* AsyncTask
-* ThreadPoolExecutor
-* IntentService
-</code></pre><h4 id="6-网络及通讯"><a href="#6-网络及通讯" class="headerlink" title="6. 网络及通讯"></a>6. 网络及通讯</h4><pre><code>* Http
-* Socket
-* 蓝牙
-* NFC
-</code></pre><h4 id="7-NDK"><a href="#7-NDK" class="headerlink" title="7. NDK"></a>7. NDK</h4><pre><code>* C/C++
-* JNI
-</code></pre><h4 id="8-其他"><a href="#8-其他" class="headerlink" title="8. 其他"></a>8. 其他</h4><pre><code>* 适配
-* 优化
-* 安全
-* 国际化
-</code></pre><h3 id="为了方便查看，这里再附上一张脑图："><a href="#为了方便查看，这里再附上一张脑图：" class="headerlink" title="为了方便查看，这里再附上一张脑图："></a>为了方便查看，这里再附上一张脑图：</h3><p><img src="/images/android/Android知识.png" alt=""></p>
-<p>Android的知识点很多，完全掌握并非一件容易的事情，做此总结以方便日后查漏补缺。</p>
+<p> <img src="/images/flutter/FlutterHome.PNG" alt=""></p>
+<blockquote>
+<p>将FlutterSDK路径添加到系统的环境变量Path中</p>
+</blockquote>
+</li>
+<li><p>使用AndroidStudio作为开发IDE，当然也可以使用VSCode作为开的IDE。我们为AndroidStudio添加Flutter开发的相关插件：</p>
+<p> <img src="/images/flutter/FlutterPlugin.PNG" alt=""></p>
+<blockquote>
+<p>在AndroidStudio中，找到菜单<code>Setting</code>-&gt;<code>Plugins</code>-&gt;<code>Browse repositories</code>， 然后搜索<code>Flutter</code>，便会出现flutter的插件，点击安装，这个时候会提醒有一个<code>Dart</code>依赖插件，继续点击安装即可。安装完成后，我们需要重启一下AndroidStudio才能使插件生效</p>
+</blockquote>
+</li>
+<li><p>使用FlutterDoctor检查开发环境：</p>
+<p> <img src="/images/flutter/FlutterDoctor.PNG" alt=""></p>
+<blockquote>
+<p>FlutterDoctor是Flutter提供给我们的环境检查工具，我们在windows中打开cmd，输入<code>flutter doctor</code>, 此时便会列举我们系统当前的Flutter环境。如果在某一项没有提示<code>[√]</code>，说明该项存在问题，只需要根据提示输入命令修复一下即可</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="创建第一个Flutter应用："><a href="#创建第一个Flutter应用：" class="headerlink" title="创建第一个Flutter应用："></a>创建第一个Flutter应用：</h3><p>使用AndroidStudio创建Flutter项目具体如下：</p>
+<p><img src="/images/flutter/FlutterStart.png" alt=""></p>
+<blockquote>
+<p>在AndroidStudio中选择<code>Start a new Flutter project</code>开始创建应用</p>
+</blockquote>
+<p><img src="/images/flutter/FlutterNext.png" alt=""></p>
+<blockquote>
+<p>填写一些应用环境及相关的信息，点击<code>Next</code></p>
+</blockquote>
+<p><img src="/images/flutter/FlutterCompany.png" alt=""></p>
+<blockquote>
+<p>填写公司标识，点击<code>Finish</code>，稍等片刻即可完成项目的创建</p>
+</blockquote>
+<h3 id="介绍Flutter应用的目录结构："><a href="#介绍Flutter应用的目录结构：" class="headerlink" title="介绍Flutter应用的目录结构："></a>介绍Flutter应用的目录结构：</h3><p><img src="/images/flutter/FlutterFolder.png" alt=""></p>
+<blockquote>
+<p>如上图所示，flutter创建好的目录结构非常简洁<br><code>android</code>目录包含了Andorid项目的文件，和我们正常创建的Android项目差不多<br><code>ios</code>目录包含iOS项目的文件，采用的是Pod管理项目<br><code>lib</code>便是我们放置Flutter应用源码的目录<br><code>pubspec.yaml</code>是Flutter项目依赖的配置文件，这个文件比较重要，我们会经常使用到</p>
+</blockquote>
+<h3 id="介绍Flutter应用的代码："><a href="#介绍Flutter应用的代码：" class="headerlink" title="介绍Flutter应用的代码："></a>介绍Flutter应用的代码：</h3><pre><code>import &apos;package:flutter/material.dart&apos;;
+
+void main() =&gt; runApp(new MyApp());
+
+// MyApp组件
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new MaterialApp(
+      title: &apos;Flutter Demo&apos;,
+      theme: new ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: new MyHomePage(title: &apos;Flutter Demo Home Page&apos;),
+    );
+  }
+}
+
+// MyHomePage组件
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+  final String title;
+
+  @override
+  _MyHomePageState createState() =&gt; new _MyHomePageState();
+}
+
+// MyHomePage组件的State
+class _MyHomePageState extends State&lt;MyHomePage&gt; {
+  int _counter = 0; //当前计数
+
+  //计数方法
+  void _incrementCounter() {
+    setState(() {
+      _counter++; //计数自增加一
+    });
+  }
+
+  //组件的构建方法
+  @override
+  Widget build(BuildContext context) {
+    return new Scaffold(
+      appBar: new AppBar( //菜单栏组件
+        title: new Text(widget.title), //文本组件
+      ),
+      body: new Center( //居中组件
+        child: new Column( //列组件
+          mainAxisAlignment: MainAxisAlignment.center, //主轴居中
+          children: &lt;Widget&gt;[
+            new Text( //文本组件
+              &apos;You have pushed the button this many times:&apos;,
+            ),
+            new Text( //文本组件
+              &apos;$_counter&apos;,
+              style: Theme.of(context).textTheme.display1,
+            ),
+          ],
+        ),
+      ),
+      floatingActionButton: new FloatingActionButton( //浮动按钮组件
+        onPressed: _incrementCounter,
+        tooltip: &apos;Increment&apos;,
+        child: new Icon(Icons.add),
+      ),
+    );
+  }
+}
+</code></pre><blockquote>
+<p>在新建的项目中，Flutter已经为我们添加了<code>main.dart</code>文件，实现了一个简单的Demo，这里稍微介绍一下<br>从注释可以看到，这个Demo由很多的<code>组件</code>组成，是的，在Flutter中，组件是一个非常重要的概念，我们可以把它理解为一个个元素<br>程序从<code>main</code>方法开始，在该方法中创建了一个没有中间状态的<code>MyApp</code>，即<code>StatelessWidget</code>的子类<code>MyApp</code><br><code>MyApp</code>中配置了App的名称<code>title</code>和主题颜色<code>primarySwatch</code>, 同时创建了带中间状态的<code>MyHomePage</code>，即<code>StatefulWidget</code>的子类<code>MyHomePage</code><br>在<code>MyHomePage</code>的状态<code>_MyHomePageState</code>中，使用了<code>_counter</code>字段记录了当前的计数，同时在<code>_incrementCounter</code>方法中，通过<code>setState</code>方法修改计数，从而使被修改的计数同时更新到UI上<br><code>_MyHomePageState</code>的构建比较简单，总体的布局是列布局，所以使用了<code>Column</code>组件，在该组件中有两个文本，一个显示提示说明，另外一个用于显示当前计数。除了列布局外，在顶层还添加了一个悬浮按钮<code>floatingActionButton</code>，悬浮按钮事件便是<code>_incrementCounter</code>，当点击按钮时，便会触发计数事件，使计数增加同时更新到UI上</p>
+</blockquote>
+<p>具体的运行效果如下：<br><img src="/images/flutter/FlutterRun.png" alt=""></p>
+<p>第一个Flutter应用程序就介绍到这里，如果有兴趣可以扫码加入微信群，大家一起交流学习。<br><img src="/images/flutter/FlutterGroup.jpg" width="25%" hegiht="25%" div="" align="center"></p>
 
       
     </div>
@@ -520,7 +618,7 @@
     <strong>本文作者： </strong>StephenChen</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://stephencmz.github.io/2018/07/13/android-line/" title="Android开发知识要点总结">https://stephencmz.github.io/2018/07/13/android-line/</a>
+    <a href="https://stephencmz.github.io/2018/07/15/flutter-init/" title="第一个Flutter应用程序">https://stephencmz.github.io/2018/07/15/flutter-init/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
@@ -540,14 +638,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/07/13/android-line/" rel="next" title="Android开发知识要点总结">
+                <i class="fa fa-chevron-left"></i> Android开发知识要点总结
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/15/flutter-init/" rel="prev" title="第一个Flutter应用程序">
-                第一个Flutter应用程序 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/07/24/flutter-hybrid/" rel="prev" title="在Android工程中添加Flutter模块">
+                在Android工程中添加Flutter模块 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -697,7 +799,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#在此就总结一下Android平台开发的知识要点："><span class="nav-number">1.</span> <span class="nav-text">在此就总结一下Android平台开发的知识要点：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下面详细列举一下相关知识点的详细内容："><span class="nav-number">2.</span> <span class="nav-text">下面详细列举一下相关知识点的详细内容：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-基础知识"><span class="nav-number">2.1.</span> <span class="nav-text">1. 基础知识</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-四大组件"><span class="nav-number">2.2.</span> <span class="nav-text">2. 四大组件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-UI相关"><span class="nav-number">2.3.</span> <span class="nav-text">3. UI相关</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-数据存储"><span class="nav-number">2.4.</span> <span class="nav-text">4. 数据存储</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-多线程"><span class="nav-number">2.5.</span> <span class="nav-text">5. 多线程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-网络及通讯"><span class="nav-number">2.6.</span> <span class="nav-text">6. 网络及通讯</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-NDK"><span class="nav-number">2.7.</span> <span class="nav-text">7. NDK</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-其他"><span class="nav-number">2.8.</span> <span class="nav-text">8. 其他</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为了方便查看，这里再附上一张脑图："><span class="nav-number">3.</span> <span class="nav-text">为了方便查看，这里再附上一张脑图：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#主要内容如下："><span class="nav-number">1.</span> <span class="nav-text">主要内容如下：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在开始之前，先列举几个不错的Flutter学习站点："><span class="nav-number">2.</span> <span class="nav-text">在开始之前，先列举几个不错的Flutter学习站点：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Windows下Flutter开发环境的搭建："><span class="nav-number">3.</span> <span class="nav-text">Windows下Flutter开发环境的搭建：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建第一个Flutter应用："><span class="nav-number">4.</span> <span class="nav-text">创建第一个Flutter应用：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#介绍Flutter应用的目录结构："><span class="nav-number">5.</span> <span class="nav-text">介绍Flutter应用的目录结构：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#介绍Flutter应用的代码："><span class="nav-number">6.</span> <span class="nav-text">介绍Flutter应用的代码：</span></a></li></ol></div>
             
 
           </div>

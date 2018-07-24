@@ -108,26 +108,24 @@
 
 
 
-  <meta name="description" content="Android和iOS是当前两大移动端平台。Android得益于其开源及高度的可定制化，在移动平台的世界里风光无限。而iOS却是闭源而且可定制化极低的移动平台，但是它拥有优秀的基因以及苹果对用户体验的极致追求，再加上苹果完善的生态圈，这使得iOS在移动平台的世界里也是佼佼者。 因此对于移动开发者而言，学习这两个平台的原生开发是非常有必要的。 在此就总结一下Android平台开发的知识要点：  首先">
+  <meta name="description" content="在新建好的Flutter项目中，我们发现Flutter和Android或iOS原生项目混合得分不开，那么我们该如何在原有的Android项目中进入Flutter呢？ 步骤还是比较简单的，如同把大象放入冰箱里，只需要3步： 创建Android原生项目 创建Flutter模块 在原生Android项目中添加Flutter模块依赖  1. 创建Android原生项目这一步骤其实没有什么好说的了，就是我们">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android开发知识要点总结">
-<meta property="og:url" content="https://stephencmz.github.io/2018/07/13/android-line/index.html">
+<meta property="og:title" content="在Android工程中添加Flutter模块">
+<meta property="og:url" content="https://stephencmz.github.io/2018/07/24/flutter-hybrid/index.html">
 <meta property="og:site_name" content="Stephen&#39;s blog">
-<meta property="og:description" content="Android和iOS是当前两大移动端平台。Android得益于其开源及高度的可定制化，在移动平台的世界里风光无限。而iOS却是闭源而且可定制化极低的移动平台，但是它拥有优秀的基因以及苹果对用户体验的极致追求，再加上苹果完善的生态圈，这使得iOS在移动平台的世界里也是佼佼者。 因此对于移动开发者而言，学习这两个平台的原生开发是非常有必要的。 在此就总结一下Android平台开发的知识要点：  首先">
+<meta property="og:description" content="在新建好的Flutter项目中，我们发现Flutter和Android或iOS原生项目混合得分不开，那么我们该如何在原有的Android项目中进入Flutter呢？ 步骤还是比较简单的，如同把大象放入冰箱里，只需要3步： 创建Android原生项目 创建Flutter模块 在原生Android项目中添加Flutter模块依赖  1. 创建Android原生项目这一步骤其实没有什么好说的了，就是我们">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://stephencmz.github.io/images/android/Android知识.png">
-<meta property="og:updated_time" content="2018-07-24T07:17:40.322Z">
+<meta property="og:updated_time" content="2018-07-24T07:17:40.454Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android开发知识要点总结">
-<meta name="twitter:description" content="Android和iOS是当前两大移动端平台。Android得益于其开源及高度的可定制化，在移动平台的世界里风光无限。而iOS却是闭源而且可定制化极低的移动平台，但是它拥有优秀的基因以及苹果对用户体验的极致追求，再加上苹果完善的生态圈，这使得iOS在移动平台的世界里也是佼佼者。 因此对于移动开发者而言，学习这两个平台的原生开发是非常有必要的。 在此就总结一下Android平台开发的知识要点：  首先">
-<meta name="twitter:image" content="https://stephencmz.github.io/images/android/Android知识.png">
+<meta name="twitter:title" content="在Android工程中添加Flutter模块">
+<meta name="twitter:description" content="在新建好的Flutter项目中，我们发现Flutter和Android或iOS原生项目混合得分不开，那么我们该如何在原有的Android项目中进入Flutter呢？ 步骤还是比较简单的，如同把大象放入冰箱里，只需要3步： 创建Android原生项目 创建Flutter模块 在原生Android项目中添加Flutter模块依赖  1. 创建Android原生项目这一步骤其实没有什么好说的了，就是我们">
 
 
 
 
 
 
-  <link rel="canonical" href="https://stephencmz.github.io/2018/07/13/android-line/"/>
+  <link rel="canonical" href="https://stephencmz.github.io/2018/07/24/flutter-hybrid/"/>
 
 
 
@@ -137,7 +135,7 @@
   };
 </script>
 
-  <title>Android开发知识要点总结 | Stephen's blog</title>
+  <title>在Android工程中添加Flutter模块 | Stephen's blog</title>
   
 
 
@@ -308,7 +306,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://stephencmz.github.io/2018/07/13/android-line/">
+    <link itemprop="mainEntityOfPage" href="https://stephencmz.github.io/2018/07/24/flutter-hybrid/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="StephenChen">
@@ -325,7 +323,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Android开发知识要点总结
+          <h1 class="post-title" itemprop="name headline">在Android工程中添加Flutter模块
               
             
           </h1>
@@ -350,24 +348,12 @@
                 
               
 
-              <time title="创建时间：2018-07-13 14:36:49" itemprop="dateCreated datePublished" datetime="2018-07-13T14:36:49+08:00">2018-07-13</time>
+              <time title="创建时间：2018-07-24 13:58:06 / 修改时间：15:17:40" itemprop="dateCreated datePublished" datetime="2018-07-24T13:58:06+08:00">2018-07-24</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-07-24 15:17:40" itemprop="dateModified" datetime="2018-07-24T15:17:40+08:00">2018-07-24</time>
               
             
           </span>
@@ -384,7 +370,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Flutter/" itemprop="url" rel="index"><span itemprop="name">Flutter</span></a></span>
 
                 
                 
@@ -398,7 +384,7 @@
 
           
           
-             <span id="/2018/07/13/android-line/" class="leancloud_visitors" data-flag-title="Android开发知识要点总结">
+             <span id="/2018/07/24/flutter-hybrid/" class="leancloud_visitors" data-flag-title="在Android工程中添加Flutter模块">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -429,48 +415,43 @@
       
 
       
-        <p><code>Android</code>和<code>iOS</code>是当前两大移动端平台。Android得益于其开源及高度的可定制化，在移动平台的世界里风光无限。而iOS却是闭源而且可定制化极低的移动平台，但是它拥有优秀的基因以及苹果对用户体验的极致追求，再加上苹果完善的生态圈，这使得iOS在移动平台的世界里也是佼佼者。</p>
-<p>因此对于移动开发者而言，学习这两个平台的原生开发是非常有必要的。</p>
-<h3 id="在此就总结一下Android平台开发的知识要点："><a href="#在此就总结一下Android平台开发的知识要点：" class="headerlink" title="在此就总结一下Android平台开发的知识要点："></a>在此就总结一下Android平台开发的知识要点：</h3><blockquote>
-<ol>
-<li>首先自然是<code>Java</code>语言的基础了，当然也可以学习谷歌新出的语言<code>Kotlin</code>，但还建议从<code>Java</code>开始学习，毕竟<code>Java</code>相对比较成熟。</li>
-<li>不管是学习Android和iOS开发，接下来便是掌握几个核心内容了：<code>UI相关内容</code>、<code>数据存储</code>、<code>网络及通讯</code>、<code>线程相关内容</code></li>
-<li>完成了基础知识的学习，接着便是学习<code>NDK</code>、<code>优化</code>等一些较为零碎的知识了。</li>
+        <p>在新建好的Flutter项目中，我们发现Flutter和Android或iOS原生项目混合得分不开，那么我们该如何在原有的Android项目中进入Flutter呢？</p>
+<h4 id="步骤还是比较简单的，如同把大象放入冰箱里，只需要3步："><a href="#步骤还是比较简单的，如同把大象放入冰箱里，只需要3步：" class="headerlink" title="步骤还是比较简单的，如同把大象放入冰箱里，只需要3步："></a>步骤还是比较简单的，如同把大象放入冰箱里，只需要3步：</h4><ol>
+<li>创建Android原生项目</li>
+<li>创建Flutter模块</li>
+<li>在原生Android项目中添加Flutter模块依赖</li>
 </ol>
-</blockquote>
-<h3 id="下面详细列举一下相关知识点的详细内容："><a href="#下面详细列举一下相关知识点的详细内容：" class="headerlink" title="下面详细列举一下相关知识点的详细内容："></a>下面详细列举一下相关知识点的详细内容：</h3><h4 id="1-基础知识"><a href="#1-基础知识" class="headerlink" title="1. 基础知识"></a>1. 基础知识</h4><pre><code>* java基础
-* 数据结构
-* 面向对象
-* 设计模式
-</code></pre><h4 id="2-四大组件"><a href="#2-四大组件" class="headerlink" title="2. 四大组件"></a>2. 四大组件</h4><pre><code>* Activity
-* Service
-* BroadcastReceiver
-* ContentProvider
-</code></pre><h4 id="3-UI相关"><a href="#3-UI相关" class="headerlink" title="3. UI相关"></a>3. UI相关</h4><pre><code>* 常用布局
-* 常用基础控件
-* 常用高级控件
-* 自定义控件
-* 动画
-</code></pre><h4 id="4-数据存储"><a href="#4-数据存储" class="headerlink" title="4. 数据存储"></a>4. 数据存储</h4><pre><code>* SharedPreference
-* File
-* Sqlite
-</code></pre><h4 id="5-多线程"><a href="#5-多线程" class="headerlink" title="5. 多线程"></a>5. 多线程</h4><pre><code>* Handler+Thread
-* AsyncTask
-* ThreadPoolExecutor
-* IntentService
-</code></pre><h4 id="6-网络及通讯"><a href="#6-网络及通讯" class="headerlink" title="6. 网络及通讯"></a>6. 网络及通讯</h4><pre><code>* Http
-* Socket
-* 蓝牙
-* NFC
-</code></pre><h4 id="7-NDK"><a href="#7-NDK" class="headerlink" title="7. NDK"></a>7. NDK</h4><pre><code>* C/C++
-* JNI
-</code></pre><h4 id="8-其他"><a href="#8-其他" class="headerlink" title="8. 其他"></a>8. 其他</h4><pre><code>* 适配
-* 优化
-* 安全
-* 国际化
-</code></pre><h3 id="为了方便查看，这里再附上一张脑图："><a href="#为了方便查看，这里再附上一张脑图：" class="headerlink" title="为了方便查看，这里再附上一张脑图："></a>为了方便查看，这里再附上一张脑图：</h3><p><img src="/images/android/Android知识.png" alt=""></p>
-<p>Android的知识点很多，完全掌握并非一件容易的事情，做此总结以方便日后查漏补缺。</p>
-
+<h4 id="1-创建Android原生项目"><a href="#1-创建Android原生项目" class="headerlink" title="1. 创建Android原生项目"></a>1. 创建Android原生项目</h4><p>这一步骤其实没有什么好说的了，就是我们原来创建一个Android原生项目<br>这里就创建一个项目叫做<code>MyApp</code></p>
+<h4 id="2-创建Flutter模块"><a href="#2-创建Flutter模块" class="headerlink" title="2. 创建Flutter模块"></a>2. 创建Flutter模块</h4><p>在上一步创建好的MyApp工程的同级目录下，注意不是MyApp工程的根目录，运行以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ flutter create -t module my_flutter</span><br></pre></td></tr></table></figure></p>
+<p>这个命令的意思是，创建一个<code>module</code>模块名称为<code>my_flutter</code></p>
+<p>这里可能会因为我国网络的原因创建非常慢，解决的办法就是添加国内镜像路径到系统的环境变量中，以下是两个镜像，选择其一添加即可：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">上海交通大学 Linux 用户组</span><br><span class="line">FLUTTER_STORAGE_BASE_URL: https://mirrors.sjtug.sjtu.edu.cn</span><br><span class="line">PUB_HOSTED_URL: https://dart-pub.mirrors.sjtug.sjtu.edu.cn</span><br><span class="line"></span><br><span class="line">Flutter 社区</span><br><span class="line">FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn</span><br><span class="line">PUB_HOSTED_URL: https://pub.flutter-io.cn</span><br></pre></td></tr></table></figure></p>
+<h4 id="3-在原生Android项目中添加Flutter模块依赖"><a href="#3-在原生Android项目中添加Flutter模块依赖" class="headerlink" title="3. 在原生Android项目中添加Flutter模块依赖"></a>3. 在原生Android项目中添加Flutter模块依赖</h4><p>添加依赖需要做两步，第一就是把模块引入到工程中，第二步便是添加模块依赖了，具体如下：</p>
+<ol>
+<li><p>在<code>MyApp</code>工程中的<code>settings.gradle</code>文件中添加如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">setBinding(new Binding([gradle: this]))</span><br><span class="line">evaluate(new File(</span><br><span class="line">        settingsDir.parentFile,</span><br><span class="line">        &apos;my_flutter/.android/include_flutter.groovy&apos;</span><br><span class="line">))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在工程中<code>App</code>的<code>build.gradle</code>中添加<code>dependencies</code>，注意这里不是工程的<code>build.gradle</code>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">implementation project(&apos;:flutter&apos;)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>至此，我们已经完成了在Android工程中添加Flutter模块。</p>
+<p>如果此时点击AndroidStudio的运行按钮，并没有报错，那么恭喜你，运气真好。但是我运气并没有那么好，在过程中还是遇到了一些小问题：</p>
+<h4 id="遇到的一些问题"><a href="#遇到的一些问题" class="headerlink" title="遇到的一些问题"></a>遇到的一些问题</h4><ol>
+<li>提醒SDKTools,版本不对，无法编译，解决方法是在Flutter模块的<code>build.gradle</code>中将其替换成为正确的版本，如下：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//替换前</span><br><span class="line">dependencies &#123;</span><br><span class="line">    testImplementation &apos;junit:junit:4.12&apos;</span><br><span class="line">    implementation &apos;com.android.support:support-v13:27.0.3&apos;</span><br><span class="line">    implementation &apos;com.android.support:support-annotations:27.0.3&apos;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//替换后</span><br><span class="line">dependencies &#123;</span><br><span class="line">    testImplementation &apos;junit:junit:4.12&apos;</span><br><span class="line">    implementation &apos;com.android.support:appcompat-v7:28.0.0-alpha3&apos;</span><br><span class="line">    implementation &apos;com.android.support:appcompat-v7:28.0.0-alpha3&apos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>这里替换的是当前本地的SDKTools版本，这个版本号可以在<code>App</code>的<code>build.gradle</code>中查看，直接复制过来即可</p>
+<ol start="2">
+<li><p>完成以上替换后，AndroidStudio再次提醒AndroidSdk版本号不匹配，解决方法还是在Flutter模块的<code>build.gradle</code>中将其替换成为正确的版本，如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">// 替换前</span><br><span class="line">android &#123;</span><br><span class="line">    compileSdkVersion 27</span><br><span class="line"></span><br><span class="line">    defaultConfig &#123;</span><br><span class="line">        minSdkVersion 16</span><br><span class="line">        targetSdkVersion 27</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//替换后</span><br><span class="line">android &#123;</span><br><span class="line">    compileSdkVersion 28</span><br><span class="line"></span><br><span class="line">    defaultConfig &#123;</span><br><span class="line">        minSdkVersion 16</span><br><span class="line">        targetSdkVersion 28</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>minSdkVersion不匹配，好吧，还是版本号的问题，不过这次是App模块的<code>build.gradle</code>，替换如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// 替换前</span><br><span class="line">android &#123;</span><br><span class="line">    compileSdkVersion 28</span><br><span class="line">    defaultConfig &#123;</span><br><span class="line">        minSdkVersion 15</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//替换后</span><br><span class="line">android &#123;</span><br><span class="line">    compileSdkVersion 28</span><br><span class="line">    defaultConfig &#123;</span><br><span class="line">        minSdkVersion 16</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>这里有个小的建议，就是尽可能地将各个模块中的<code>compileSdkVersion</code>,<code>minSdkVersion</code>等各种版本号替换为一致，避免出现一些奇怪的问题，当然最好是能在外部定义一个文件统一管理，然后在各个模块中的<code>build.gradle</code>进行引用。</p>
+<h4 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/StephenCMZ/flutter_hybrid</span><br></pre></td></tr></table></figure>
+<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/flutter/flutter-intellij</span><br><span class="line">https://zhuanlan.zhihu.com/p/40373247</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -520,7 +501,7 @@
     <strong>本文作者： </strong>StephenChen</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://stephencmz.github.io/2018/07/13/android-line/" title="Android开发知识要点总结">https://stephencmz.github.io/2018/07/13/android-line/</a>
+    <a href="https://stephencmz.github.io/2018/07/24/flutter-hybrid/" title="在Android工程中添加Flutter模块">https://stephencmz.github.io/2018/07/24/flutter-hybrid/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
@@ -540,15 +521,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/07/15/flutter-init/" rel="next" title="第一个Flutter应用程序">
+                <i class="fa fa-chevron-left"></i> 第一个Flutter应用程序
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/07/15/flutter-init/" rel="prev" title="第一个Flutter应用程序">
-                第一个Flutter应用程序 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -697,7 +678,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#在此就总结一下Android平台开发的知识要点："><span class="nav-number">1.</span> <span class="nav-text">在此就总结一下Android平台开发的知识要点：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下面详细列举一下相关知识点的详细内容："><span class="nav-number">2.</span> <span class="nav-text">下面详细列举一下相关知识点的详细内容：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-基础知识"><span class="nav-number">2.1.</span> <span class="nav-text">1. 基础知识</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-四大组件"><span class="nav-number">2.2.</span> <span class="nav-text">2. 四大组件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-UI相关"><span class="nav-number">2.3.</span> <span class="nav-text">3. UI相关</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-数据存储"><span class="nav-number">2.4.</span> <span class="nav-text">4. 数据存储</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-多线程"><span class="nav-number">2.5.</span> <span class="nav-text">5. 多线程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-网络及通讯"><span class="nav-number">2.6.</span> <span class="nav-text">6. 网络及通讯</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-NDK"><span class="nav-number">2.7.</span> <span class="nav-text">7. NDK</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-其他"><span class="nav-number">2.8.</span> <span class="nav-text">8. 其他</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为了方便查看，这里再附上一张脑图："><span class="nav-number">3.</span> <span class="nav-text">为了方便查看，这里再附上一张脑图：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#步骤还是比较简单的，如同把大象放入冰箱里，只需要3步："><span class="nav-number">1.</span> <span class="nav-text">步骤还是比较简单的，如同把大象放入冰箱里，只需要3步：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-创建Android原生项目"><span class="nav-number">2.</span> <span class="nav-text">1. 创建Android原生项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-创建Flutter模块"><span class="nav-number">3.</span> <span class="nav-text">2. 创建Flutter模块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-在原生Android项目中添加Flutter模块依赖"><span class="nav-number">4.</span> <span class="nav-text">3. 在原生Android项目中添加Flutter模块依赖</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#遇到的一些问题"><span class="nav-number">5.</span> <span class="nav-text">遇到的一些问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#源码"><span class="nav-number">6.</span> <span class="nav-text">源码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#参考"><span class="nav-number">7.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>
